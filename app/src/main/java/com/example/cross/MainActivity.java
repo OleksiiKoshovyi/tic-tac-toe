@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
         private void gameOver() {
             CharSequence text = "Draw";
             //Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
+
             game.reset();
             refresh();
         }
