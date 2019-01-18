@@ -79,15 +79,14 @@ public class MainActivity extends AppCompatActivity {
 
         private void gameOver(Player player) {
             CharSequence text = "Player \"" + player.getName() + "\" won!";
-            //Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), text, Toast.LENGTH_SHORT).show();
             game.reset();
             refresh();
         }
 
         private void gameOver() {
             CharSequence text = "Draw";
-            //Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
-
+            Toast.makeText(getApplicationContext(), text, Toast.LENGTH_SHORT).show();
             game.reset();
             refresh();
         }
